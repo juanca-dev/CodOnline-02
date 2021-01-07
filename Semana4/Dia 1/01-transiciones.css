@@ -1,0 +1,19 @@
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: aquamarine;
+    border-radius: 10px;
+    
+    transition-delay: 250ms;
+    transition-property: all;
+
+    transition-duration: 2s;
+    /*las propiedades a indicar los separamos por coma y asi queremos  todas las propiedades  podemos indicar por all*/
+    /*transition-property: width,height ;*/
+}
+/*hover aplicará estas propiedades en los elementos que tengan la clase.cuadrado cuando se le ponga el puntero del mouse encima*/
+.cuadrado:hover{
+    width: 400px;
+    height: 400px;
+    background: red;
+}
