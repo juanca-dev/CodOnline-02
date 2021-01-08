@@ -1,0 +1,26 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.contenedor{
+    border: 2px solid red;
+    height: 600px;
+    /*grid*/
+    display: grid;
+    /*grid-template-columns: 200px 250px 100px;*/
+    grid-template-rows: 120px 180px 240px;
+    /*repeat:(cuantas veces quiiero repetir el tamañaño)*/
+    /*1fr representa el espacio libre*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*minmax(tamaño_minimo tamaño_maximo)*/
+   grid-template-columns: repeat(3, minmax(180px, 250px));
+   /*gap significa brecha*/
+   gap: 10px
+
+}
+.item{
+    border: 2px solid lightseagreen;
+   
+}
